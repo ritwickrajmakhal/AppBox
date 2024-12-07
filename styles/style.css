@@ -134,12 +134,11 @@ header a {
     position: relative;
     display: inline-block;
     padding: 15px;
-    margin: 5px;
-    background-color: var(--md-sys-color-background);
+    margin: 15px;
     border-radius: 50%;
 }
 
 carousel-component {
     padding: 20px;
-    margin-block: 50px;
+    margin-block: 40px;
 }

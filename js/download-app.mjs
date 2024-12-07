@@ -102,7 +102,7 @@ export class DownloadApp extends HTMLElement {
       <style>
         .main {
             padding: 20px;
-            margin-block-start: 100px;
+            margin-block-start: 70px;
             display: flex;
             justify-content: space-around;
             align-items: center;
