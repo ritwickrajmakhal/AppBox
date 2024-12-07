@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO Web Store | Apps</title>
+    <script>
+        const getQueryParam = (name) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        window.onload = function () {
+            const appName = getQueryParam('name');
+            if (appName) {
+                document.title = 'GO Web Store | ' + appName;
+            }
+        };
+    </script>
+    <script type="importmap">
+        {
+              "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+              }
+            }
+          </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import {
+            styles as typescaleStyles
+        } from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script type="module" src="../js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="../#"><md-ripple></md-ripple><img src="../assets/Back.svg" alt="Go Back"></a>
+    </header>
+    <main>
+
+
+    </main>
+</body>
+
+</html>
