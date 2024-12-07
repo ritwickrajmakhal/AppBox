@@ -69,7 +69,7 @@ main {
     margin-inline: auto;
 }
 
-h1 {
+h1.hero {
     display: block;
     text-align: center;
     margin-block-start: 100px;
@@ -127,6 +127,7 @@ header {
     position: fixed;
     display: block;
     inline-size: 100%;
+    inset-block-start: 0;
 }
 
 header a {

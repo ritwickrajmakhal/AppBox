@@ -5,18 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GO Web Store | Apps</title>
-    <script>
-        const getQueryParam = (name) => {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
-        }
-        window.onload = function () {
-            const appName = getQueryParam('name');
-            if (appName) {
-                document.title = 'GO Web Store | ' + appName;
-            }
-        };
-    </script>
     <script type="importmap">
         {
               "imports": {
@@ -33,6 +21,7 @@
     </script>
     <link rel="stylesheet" href="../styles/style.css">
     <script type="module" src="../js/app.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
@@ -40,9 +29,9 @@
         <a href="../#"><md-ripple></md-ripple><img src="../assets/Back.svg" alt="Go Back"></a>
     </header>
     <main>
-
-
+        <download-app></download-app>
     </main>
+
 </body>
 
 </html>
