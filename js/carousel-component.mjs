@@ -55,7 +55,7 @@ export class CarouselComponent extends HTMLElement {
           .prev, .next{
             position: absolute;
             inset-block-start: 0;
-            inset-inline-end: 40px;
+            inset-inline-end: 20px;
           }
 
           .prev {
@@ -109,7 +109,7 @@ export class CarouselComponent extends HTMLElement {
     const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
     if (carousel.scrollLeft + itemWidth >= maxScrollLeft)
       nextButton.setAttribute("disabled", "true");
-    prevButton.removeAttribute("disabled");
+    prevButton?.removeAttribute("disabled");
 
     carousel.scrollBy({ left: itemWidth + 16, behavior: "smooth" });
   }
@@ -119,7 +119,7 @@ export class CarouselComponent extends HTMLElement {
     const nextButton = this.shadowRoot.querySelector(".next");
     const itemWidth = 500;
     if (carousel.scrollLeft <= 0) prevButton.setAttribute("disabled", "true");
-    nextButton.removeAttribute("disabled");
+    nextButton?.removeAttribute("disabled");
 
     carousel.scrollBy({ left: -(itemWidth + 16), behavior: "smooth" });
   }
