@@ -138,3 +138,8 @@ header a {
     background-color: var(--md-sys-color-background);
     border-radius: 50%;
 }
+
+carousel-component {
+    padding: 20px;
+    margin-block: 50px;
+}
