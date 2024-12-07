@@ -6,7 +6,7 @@ export class AnimatedLogo extends HTMLElement {
     template.innerHTML = `
         <style>
           .animate .earth {
-            animation: wave 4s ease 1 both;
+            animation: wave 3s ease 1 both;
           }
 
           .earth:nth-of-type(1) {
@@ -60,7 +60,7 @@ export class AnimatedLogo extends HTMLElement {
           }
 
           .animate .google {
-            animation: rotation 2s ease 1 both;
+            animation: rotation 1.2s ease 1 both;
           }
 
           .animate  .google:nth-last-of-type(1) {
@@ -71,12 +71,12 @@ export class AnimatedLogo extends HTMLElement {
           .animate  .google:nth-last-of-type(2) {
             rotate: -166deg;
             transform-origin: 16px 16px;
-            animation-delay: 200ms;
+            animation-delay: 150ms;
           }
           .animate .google:nth-last-of-type(3) {
             rotate: -62deg;
             transform-origin: 16px 16px;
-            animation-delay: 300ms;
+            animation-delay: 200ms;
           }
 
           @keyframes rotation {
