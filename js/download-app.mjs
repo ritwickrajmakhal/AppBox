@@ -159,6 +159,10 @@ export class DownloadApp extends HTMLElement {
             text-transform: capitalize;
             block-size: 30px;
         }
+
+        md-filled-button, md-assist-chip {
+            font-family: "Roboto", sans-serif;
+        }
   
         .main.downloading-active .downloading {
             display: flex;
@@ -184,7 +188,7 @@ export class DownloadApp extends HTMLElement {
             <md-assist-chip label="${data.type}"></md-assist-chip>
           </div>
         </div>
-        <md-filled-tonal-icon-button>
+        <md-filled-tonal-icon-button aria-label="share this app">
           <md-icon>share</md-icon>
         </md-filled-tonal-icon-button>
       </div>
