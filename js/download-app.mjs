@@ -113,7 +113,7 @@ export class DownloadApp extends HTMLElement {
   
         .main h1 {
             color: var(--md-sys-color-primary);
-            word-break: break-all;
+            word-break: break-word;
         }
   
         .main img {
