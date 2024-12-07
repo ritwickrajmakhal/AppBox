@@ -64,7 +64,7 @@ export class CarouselComponent extends HTMLElement {
 
         </style>
         <div>
-          <md-filled-tonal-icon-button class="prev" aria-label="Previous">
+          <md-filled-tonal-icon-button class="prev" aria-label="Previous" disabled>
            <md-icon>arrow_back</md-icon>
           </md-filled-tonal-icon-button>
           <div class="carousel">
@@ -103,12 +103,25 @@ export class CarouselComponent extends HTMLElement {
   }
 
   scrollToNext(carousel) {
+    const prevButton = this.shadowRoot.querySelector(".prev");
+    const nextButton = this.shadowRoot.querySelector(".next");
     const itemWidth = 500;
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+    if (carousel.scrollLeft + itemWidth >= maxScrollLeft) {
+      nextButton.setAttribute("disabled", "true");
+      prevButton.removeAttribute("disabled");
+    }
     carousel.scrollBy({ left: itemWidth + 16, behavior: "smooth" });
   }
 
   scrollToPrev(carousel) {
+    const prevButton = this.shadowRoot.querySelector(".prev");
+    const nextButton = this.shadowRoot.querySelector(".next");
     const itemWidth = 500;
+    if (carousel.scrollLeft <= 0) {
+      prevButton.setAttribute("disabled", "true");
+      nextButton.removeAttribute("disabled");
+    }
     carousel.scrollBy({ left: -(itemWidth + 16), behavior: "smooth" });
   }
 }
