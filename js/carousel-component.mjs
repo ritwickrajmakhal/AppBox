@@ -55,7 +55,7 @@ export class CarouselComponent extends HTMLElement {
           .prev, .next{
             position: absolute;
             inset-block-start: 0;
-            inset-inline-end: 0.625rem;
+            inset-inline-end: 40px;
           }
 
           .prev {

@@ -176,7 +176,7 @@ export class DownloadApp extends HTMLElement {
         <img src="https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main${
           data.base_url
         }${data.icon}" 
-             alt="${data.name}" height="120px" width="auto">
+             alt="${data.name}" height="110px" width="auto">
         <div>
           <h1>${data.name}</h1>
           <div class="downloading">
