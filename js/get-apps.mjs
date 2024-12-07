@@ -1,12 +1,13 @@
 const section = document.querySelector("section");
 
-export const getApps = async (query = "") => {
+export const getApps = async (query = "", justStore = false) => {
   const res = await fetch(
     "https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main/store.json"
   );
-  while (section.firstChild) section.removeChild(section.firstChild);
   const data = await res.json();
   if (!query) localStorage.setItem("store", JSON.stringify(data));
+  if (justStore) return;
+  while (section.firstChild) section.removeChild(section.firstChild);
   for (const app of data) {
     if (
       query &&
