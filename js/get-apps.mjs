@@ -22,7 +22,7 @@ export const getApps = async (query = "", justStore = false) => {
       `https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main${app.base_url}${app.icon}`
     );
     appCard.setAttribute("title", app.name);
-    appCard.setAttribute("link", `/pages/app.html?name=${app.name}`);
+    appCard.setAttribute("link", `./pages/app.html?name=${app.name}`);
     section.appendChild(appCard);
   }
 };
