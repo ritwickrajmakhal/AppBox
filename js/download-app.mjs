@@ -185,7 +185,6 @@ export class DownloadApp extends HTMLElement {
           </div>
           <div class="badge">
             <md-assist-chip label="${data.category}"></md-assist-chip>
-            <md-assist-chip label="${data.type}"></md-assist-chip>
           </div>
         </div>
         <md-filled-tonal-icon-button aria-label="share this app">

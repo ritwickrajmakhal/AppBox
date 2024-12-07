@@ -13,7 +13,7 @@ export const getApps = async (query = "", justStore = false) => {
       query &&
       !(app.name + app.category + app.type)
         .toLowerCase()
-        .includes(query.toLowerCase())
+        .includes(query.trim().toLowerCase())
     )
       continue;
     const appCard = document.createElement("app-card");
