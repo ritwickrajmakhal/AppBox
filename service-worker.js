@@ -23,6 +23,7 @@ const CACHE_ASSETS = [
   "./js/get-apps.mjs",
   "./fonts/Lato-Bold.ttf",
   "./fonts/Lato-Regular.ttf",
+  "./fonts/Material Symbols.woff",
 ];
 
 self.addEventListener("install", (event) => {
