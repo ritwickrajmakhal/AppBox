@@ -1,5 +1,5 @@
 {
-    "name": "Google Earth Web Store for Liquid Galaxy apps",
+    "name": "GO Web Store",
     "short_name": "GO Web Store",
     "description": "A web store built for the liquid galaxy apps.",
     "start_url": "./index.html",
