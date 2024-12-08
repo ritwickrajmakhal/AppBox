@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GO Web Store | Home</title>
-
+    <meta name="theme-color" content="#10131a" />
     <meta name="description" content="A web store built for the liquid galaxy apps.">
     <meta property="og:title" content="GO Web Store by liquid galaxy">
     <meta property="og:description" content="A web store built for the liquid galaxy apps.">
@@ -33,6 +33,20 @@
     </script>
     <link rel="stylesheet" href="./styles/style.css">
     <script type="module" src="./js/script.js" defer></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("./service-worker.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered with scope:", registration.scope);
+                    })
+                    .catch((error) => {
+                        console.error("Service Worker registration failed:", error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
