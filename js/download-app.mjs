@@ -20,6 +20,7 @@ export class DownloadApp extends HTMLElement {
       installButton.textContent = "Open";
     } else {
       installButton.addEventListener("click", async () => {
+        if ("setAppBadge" in navigator) navigator.setAppBadge();
         installButton.setAttribute("disabled", "true");
         installButton.textContent = "Installing...";
         const url = `https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main${data.base_url}${data.file}`;
@@ -32,6 +33,7 @@ export class DownloadApp extends HTMLElement {
           );
           installButton.removeAttribute("disabled");
           installButton.textContent = "Install";
+          if ("setAppBadge" in navigator) navigator.setAppBadge(0);
           return;
         }
 
@@ -70,6 +72,7 @@ export class DownloadApp extends HTMLElement {
         URL.revokeObjectURL(downloadUrl);
         installButton.removeAttribute("disabled");
         installButton.textContent = "Install";
+        if ("setAppBadge" in navigator) navigator.setAppBadge(0);
       });
     }
 
