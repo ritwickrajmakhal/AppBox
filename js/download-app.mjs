@@ -188,7 +188,7 @@ export class DownloadApp extends HTMLElement {
             <p class="progress-text">0% of 0MB</p>
           </div>
           <div class="badge">
-            <md-assist-chip label="${data.category}" href="../index.html?app=${
+            <md-assist-chip label="${data.category}" href="./index.html?app=${
       data.category
     }"></md-assist-chip>
           </div>
