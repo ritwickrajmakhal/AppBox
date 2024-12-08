@@ -74,7 +74,7 @@ export class CarouselComponent extends HTMLElement {
                   ? `<div class="carousel-item"><img src="https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main${
                       this.carouselAssets[1] + asset
                     }" alt="Carousel item" draggable="false"></div>`
-                  : `<div class="carousel-item"><iframe src="https://www.youtube.com/embed/${
+                  : `<div class="carousel-item"><iframe title="video" src="https://www.youtube.com/embed/${
                       new URL(asset).pathname.split("/")[1]
                     }" frameborder="0" allowfullscreen></iframe></div>`
               )
