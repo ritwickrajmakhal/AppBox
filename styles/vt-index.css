@@ -20,7 +20,7 @@
 }
 
 ::view-transition-old(root) {
-    animation: slideToRight 3s;
+    animation: slideToRight 0.3s;
 }
 
 ::view-transition-new(root) {

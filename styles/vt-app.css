@@ -22,5 +22,5 @@
 }
 
 ::view-transition-new(root) {
-    animation: slideFromRight 3s;
+    animation: slideFromRight 0.3s;
 }
