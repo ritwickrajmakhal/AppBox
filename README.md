@@ -2,7 +2,7 @@
 
 **GO Web Store** is a dedicated platform for Liquid Galaxy applications, including Google Earth and Chromium-based apps, Progressive Web Apps (PWAs), and data visualization projects. These apps have been developed over time, many as part of the Google Summer of Code initiative.  
 
-> **Note**  
+> [!NOTE]    
 > **Why "GO"?**: The name "GO" reflects our focus on Google Earth as a foundational aspect of our work, emphasizing the Google Open Source community and its contributions. The liquid galaxy is a cluster panoramic visualiztion of the Google Earth.
 
 ---
