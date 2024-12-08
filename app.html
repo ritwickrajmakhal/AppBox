@@ -14,8 +14,8 @@
     <meta property="og:url" content="https://store.liquidgalaxy.eu">
     <meta property="og:type" content="website">
     <meta name="canonical" content="https://store.liquidgalaxy.eu">
-    <link rel="shortcut icon" href="../assets/Go Web Store.svg" type="image/x-icon">
-    <link rel="manifest" href="../manifest.json">
+    <link rel="shortcut icon" href="./assets/Go Web Store.svg" type="image/x-icon">
+    <link rel="manifest" href="./manifest.json">
 
 
     <script type="importmap">
@@ -32,14 +32,15 @@
         } from '@material/web/typography/md-typescale-styles.js';
         document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
     </script>
-    <link rel="stylesheet" href="../styles/style.css">
-    <script type="module" src="../js/app.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/vt-app.css">
+    <script type="module" src="./js/app.js" defer></script>
     <style>
         @font-face {
             font-family: 'Material Symbols Outlined';
             font-style: normal;
             font-weight: 400;
-            src: url("../fonts/Material\ Symbols.woff") format('woff');
+            src: url("./fonts/Material\ Symbols.woff") format('woff');
         }
 
         .material-symbols-outlined {
@@ -62,7 +63,7 @@
 
 <body>
     <header>
-        <a href="../#"><md-ripple></md-ripple><img src="../assets/Back.svg" alt="Go Back"></a>
+        <a href="./#"><md-ripple></md-ripple><img src="./assets/Back.svg" alt="Go Back"></a>
     </header>
     <main>
         <download-app></download-app>

@@ -2,6 +2,7 @@ const CACHE_NAME = "pwa-cache-v1";
 const CACHE_ASSETS = [
   "./",
   "./index.html",
+  "./app.html",
   "./styles/style.css",
   "./assets/Back.svg",
   "./assets/Go Web Store.svg",
