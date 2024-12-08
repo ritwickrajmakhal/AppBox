@@ -1,10 +1,16 @@
+import { getQueryParam } from "./query-param.mjs";
+
 export class Searchbar extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.value = "";
+    this.value = getQueryParam("app") || "";
     this.timer = null;
     this.speechRecognitionExists = true;
+
+    const appName = getQueryParam("app");
+
+    if (appName) this.debouncedSearch(appName);
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.debounce = this.debounce.bind(this);
@@ -28,7 +34,6 @@ export class Searchbar extends HTMLElement {
       this.timer = setTimeout(() => func(...args), delay);
     };
   }
-
   handleInputChange(e) {
     const inputValue = e.target.value;
     this.value = inputValue;

@@ -71,7 +71,7 @@ export class AppDetailsComponent extends HTMLElement {
   
       <div>
         <h2>About ${name}</h2>
-        <md-assist-chip label="${type}"></md-assist-chip>
+        <md-assist-chip label="${type}" href="../index.html?app=${type}"></md-assist-chip>
         <p><strong>Date:</strong> ${date}</p>
         <p><strong>Android OS:</strong> ${android_OS}</p>
         <p><strong>Version:</strong> ${version}</p>

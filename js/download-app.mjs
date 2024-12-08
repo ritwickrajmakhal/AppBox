@@ -83,7 +83,7 @@ export class DownloadApp extends HTMLElement {
       const shareData = {
         title: data.name,
         text: data.content || `Check out the app ${data.name}`,
-        url: `https://store.liquidgalaxy.eu/pages/app.html?name=${encodeURIComponent(
+        url: `https://store.liquidgalaxy.eu/index.html?app=${encodeURIComponent(
           data.name
         )}`,
       };
@@ -188,7 +188,9 @@ export class DownloadApp extends HTMLElement {
             <p class="progress-text">0% of 0MB</p>
           </div>
           <div class="badge">
-            <md-assist-chip label="${data.category}"></md-assist-chip>
+            <md-assist-chip label="${data.category}" href="../index.html?app=${
+      data.category
+    }"></md-assist-chip>
           </div>
         </div>
         <md-filled-tonal-icon-button aria-label="share this app">
