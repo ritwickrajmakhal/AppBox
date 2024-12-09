@@ -130,7 +130,7 @@ The **Badging API** allows web applications to display small status indicators (
 ### 3. Reminders and Alerts
 - **To-Do List Apps:** Notify users of due or overdue tasks.
 - **Calendar Apps:** Highlight upcoming events or meetings.
-- **Fitness
+- **Fitness Apps:** Remind users of pending goals (e.g., "Steps left: 500").
 
 
 ## Contributing  
