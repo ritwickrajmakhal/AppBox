@@ -101,8 +101,10 @@ app-card {
 
 section:empty {
     position: relative;
-    background-image: url(../assets/No\ Match\ Found.svg);
-    block-size: 400px;
+    background-image: url(../assets/Space_empty_state.webp);
+    block-size: 350px;
+    margin-block-start: 50px;
+    margin-block-end: 150px;
     inline-size: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -113,14 +115,14 @@ section:empty {
 section:empty::after {
     content: "We searched the entire galaxy but couldn't find what you're looking for!";
     position: absolute;
-    color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-background);
     inset-inline-start: 50%;
-    inset-block-end: 30px;
+    inset-block-end: -80px;
     inline-size: 100%;
     max-inline-size: 400px;
     font-size: 20px;
     text-align: center;
-    translate: -50% 100%;
+    translate: -50% 0;
 }
 
 header {
