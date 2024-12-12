@@ -64,7 +64,21 @@ export class AppDetailsComponent extends HTMLElement {
         .content {
           margin-block-start: 1rem;
         }
-        md-assist-chip{
+        
+        .info {
+          display: flex;
+          gap: 0 20px;
+          flex-wrap: wrap;
+          margin-block: 20px;
+        }
+
+        .info p {
+          display: flex;
+          gap: 0 5px;
+          margin: 0;
+        }
+
+        md-assist-chip {
           text-transform: capitalize;
         }
       </style>
@@ -72,9 +86,11 @@ export class AppDetailsComponent extends HTMLElement {
       <div>
         <h2>About ${name}</h2>
         <md-assist-chip label="${type}" href="./index.html?app=${type}"></md-assist-chip>
-        <p><strong>Date:</strong> ${date}</p>
-        <p><strong>Android OS:</strong> ${android_OS}</p>
-        <p><strong>Version:</strong> ${version}</p>
+        <div class="info">
+          <p><strong><md-icon>schedule</md-icon></strong> ${date}</p>
+          <p><strong><md-icon>android</md-icon></strong>Android ${android_OS}</p>
+          <p><strong><md-icon>history</md-icon></strong>Version ${version}</p>
+        </div>
         <div class="content">
           <p>${content.replace(/\n/g, "<br>")}</p>
         </div>
