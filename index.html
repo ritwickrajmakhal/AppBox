@@ -59,6 +59,14 @@
         <section>
         </section>
     </main>
+    <script>
+        function sendHeight() {
+            window.parent.postMessage(document.body.scrollHeight, '*');
+        }
+
+        window.onload = sendHeight;
+        window.onresize = sendHeight;
+    </script>
 </body>
 
 </html>
