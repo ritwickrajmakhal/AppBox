@@ -88,7 +88,11 @@ export class AppDetailsComponent extends HTMLElement {
         <md-assist-chip label="${type}" href="./index.html?app=${type}"></md-assist-chip>
         <div class="info">
           <p><strong><md-icon>schedule</md-icon></strong> ${date}</p>
-          <p><strong><md-icon>android</md-icon></strong>Android ${android_OS}</p>
+          ${
+            android_OS
+              ? `<p><strong><md-icon>android</md-icon></strong>Android ${android_OS}</p>`
+              : ""
+          }
           <p><strong><md-icon>history</md-icon></strong>Version ${version}</p>
         </div>
         <div class="content">
