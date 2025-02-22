@@ -71,7 +71,7 @@ export class CarouselComponent extends HTMLElement {
             ${this.carouselAssets[0]
               .map((asset) =>
                 asset.endsWith(".webp")
-                  ? `<div class="carousel-item"><img src="https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main${
+                  ? `<div class="carousel-item"><img src="https://raw.githubusercontent.com/ritwickrajmakhal/App-Data/refs/heads/main${
                       this.carouselAssets[1] + asset
                     }" alt="Carousel item" draggable="false"></div>`
                   : `<div class="carousel-item"><iframe title="video" src="https://www.youtube.com/embed/${

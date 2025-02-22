@@ -1,7 +1,7 @@
 {
-    "name": "GO Web Store",
-    "short_name": "GO Web Store",
-    "description": "A web store built for the liquid galaxy apps.",
+    "name": "AppBox",
+    "short_name": "AppBox",
+    "description": "A web store built for andorid apps.",
     "start_url": "./index.html",
     "background_color": "#10131a",
     "display": "standalone",

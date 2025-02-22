@@ -23,7 +23,7 @@ export class DownloadApp extends HTMLElement {
         if ("setAppBadge" in navigator) navigator.setAppBadge();
         installButton.setAttribute("disabled", "true");
         installButton.textContent = "Installing...";
-        const url = `https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main${data.base_url}${data.file}`;
+        const url = `https://raw.githubusercontent.com/ritwickrajmakhal/App-Data/refs/heads/main${data.base_url}${data.file}`;
         const response = await fetch(url);
         const contentLength = response.headers.get("content-length");
 
@@ -83,7 +83,7 @@ export class DownloadApp extends HTMLElement {
       const shareData = {
         title: data.name,
         text: data.content || `Check out the app ${data.name}`,
-        url: `https://store.liquidgalaxy.eu/index.html?app=${encodeURIComponent(
+        url: `https://ritwickrajmakhal.github.io/AppBox/?app=${encodeURIComponent(
           data.name
         )}`,
       };
@@ -177,7 +177,7 @@ export class DownloadApp extends HTMLElement {
         }
       </style>
       <div class="main">
-        <img src="https://raw.githubusercontent.com/LiquidGalaxyLAB/Data/refs/heads/main${
+        <img src="https://raw.githubusercontent.com/ritwickrajmakhal/App-Data/refs/heads/main${
           data.base_url
         }${data.icon}" 
              alt="${data.name}" height="100px" width="100px">

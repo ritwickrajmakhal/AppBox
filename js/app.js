@@ -13,6 +13,6 @@ customElements.define("app-details", AppDetailsComponent);
 window.onload = function () {
   const appName = getQueryParam("name");
   if (appName) {
-    document.title = "GO Web Store | " + appName;
+    document.title = "AppBox | " + appName;
   }
 };
