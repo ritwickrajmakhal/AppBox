@@ -38,7 +38,7 @@ export class AnimatedLogo extends HTMLElement {
         }
     </style>
     <div class="animated-logo">
-        <img src="/assets/smartphone.png" alt="Smartphone" />
+        <img src="./assets/smartphone.png" alt="Smartphone" />
         <p>AppBox</p>
     </div>
     `;
